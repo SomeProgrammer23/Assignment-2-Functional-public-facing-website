@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Desperados Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="The home page of the esports team, Desperados">
+        <meta name="keywords" content="esport, Desperados, professional, players">
+        <meta name="author" content="Desperados">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/JavaScript" src="main.js"> </script>
+    </head>
+    <body>
+        <nav>
+            <a href="#welcome">Welcome</a> &nbsp; <a href="#gameplay_videos">Gameplay Videos</a> &nbsp;
+            <a href="#events">Events</a> &nbsp; <a href="#players">Players</a> &nbsp;
+            <a href="#player_statistics" onclick="toggleStatistics('show')">Player Statistics</a> &nbsp; <a href="#contact">Contact</a>
+        </nav>
+        <header>
+            <h1>Desperados</h1>
+        </header>
+        <br>
+        <main>
+            <section id = "welcome">
+                <h2>Welcome!</h2>
+                <p>Welcome to the home of the Desperados! We are a proud esports team that compete primarily in league of legends.</p>
+                <p>Please look around to learn more about our players, as well as upcoming events and announcements!</p>
+                
+            </section>
+            <br>
+            <section id = "gameplay_videos">
+                <div class="video_grid_container">
+                    <div class="video_grid_item1"> <h2>Gameplay Videos</h2></div>
+                    <div class="video_grid_item2"> <iframe src="https://www.youtube.com/embed/7ahgosTZJHg?mute=1&autoplay=0"> </iframe></div>
+                    <div class="video_grid_item3"> <iframe src="https://www.youtube.com/embed/7ahgosTZJHg?mute=1&autoplay=0"> </iframe></div>
+                    <div class="video_grid_item4"> Watch the highlights from our last tournament</div>
+                    <div class="video_grid_item5"> Announcement trailer for upcoming event</div>
+                </div>
+            </section>
+            <br>
+            <section id = "players">
+                <div class="player_grid_container">
+                    <div class="player_grid_item1"> <h2>Players</h2></div>
+                    <div class="player_grid_item2"> <button onclick="changeStatistics(1); location.href='#player_statistics';"><img 
+                        src="images\Player_Image.png"></button></div>
+                    <div class="player_grid_item3"> <button onclick="changeStatistics(2); location.href='#player_statistics';"><img 
+                        src="images\Player_Image.png"></button></div>
+                    <div class="player_grid_item4"> <button onclick="changeStatistics(3); location.href='#player_statistics';"><img 
+                        src="images\Player_Image.png"></button></div>
+                    <div class="player_grid_item5"> <button onclick="changeStatistics(4); location.href='#player_statistics';"><img 
+                        src="images\Player_Image.png"></button></div>
+                    <div class="player_grid_item6"> <button onclick="changeStatistics(5); location.href='#player_statistics';"><img 
+                        src="images\Player_Image.png"></button></div>
+                </div>
+                <p>Click on our players or the button bellow to learn more!</p>
+                <button id="show_statistics_button" onclick="toggleStatistics('show'); location.href='#player_statistics';">  Show Statistics</button>
+            </section>
+            <section id = "player_statistics">
+                <h3>Player Statistics</h3>
+                <h4>Jackson</h4>
+                <p>General game stats:</p>
+                <table border="1px" width="100%">
+                    <tr>
+                        <th>Record</th>
+                        <th>Win Rate</th>
+                        <th>KDA</th>
+                        <th>CS per Minute</th>
+                        <th>Gold Per Minute</th>
+                        <th>Gold%</th>
+                        <th>Kill Participation</th>
+                    </tr>
+                    <tr>
+                        <td>682W - 324L</td>
+                        <td>67.8%</td>
+                        <td>4.3</td>
+                        <td>8.9</td>
+                        <td>412</td>
+                        <td>22.1%</td>
+                        <td>64.7%</td>
+                    </tr>
+                </table>
+                <button onclick="toggleStatistics('hide')">Hide Statistics</button>
+            </section>
+            
+        </main>
+        <aside>
+            <section id = "events">
+                <h2>Events</h2>
+                <div class = "event_grid_container">
+                    <div class="event_grid_image">
+                        <div class="event_grid_image_content"><img src="images\winning_game.jpg"></div>
+                    </div>  
+                    <div class="event_grid_title">
+                        <div class="event_grid_title_content">Winning Tournament!!</div>
+                    </div>
+                    <div class="event_grid_text">
+                        <div class="event_grid_text_content">Desperados win yet another tournament! 
+                            After a close battle we were once again able to pull through a win in last week event.</div>
+                    </div>
+                </div>
+                <br>
+                <div class = "event_grid_container">
+                    <div class="event_grid_image">
+                        <div class="event_grid_image_content"><img src="images\next_tournament.jpg"></div>
+                    </div>  
+                    <div class="event_grid_title">
+                        <div class="event_grid_title_content">Come to our next game!</div>
+                    </div>
+                    <div class="event_grid_text">
+                        <div class="event_grid_text_content">Buy tickets to our upcoming tournamanet only one month away!</div>
+                    </div>
+                </div>
+                <br>
+                <div class = "event_grid_container">
+                    <div class="event_grid_image">
+                        <div class="event_grid_image_content"><img src="images\compound_image.jpg"></div>
+                    </div>  
+                    <div class="event_grid_title">
+                        <div class="event_grid_title_content">New training compound</div>
+                    </div>
+                    <div class="event_grid_text">
+                        <div class="event_grid_text_content">Our new training compound is finally done building and 
+                            ready to start being used by our community elites.</div>
+                    </div>
+                </div>
+            </section>
+            <section id = "contact">
+                <h2>Contact Us</h2>
+                <form method="post">
+                    <label for="firstname">First name: </label>
+                    <input type="text" title="firstname" placeholder="Enter your first name." required>
+                    <br>
+                    <label for="lastname">Last name: </label>
+                    <input type="text" title="lastname" placeholder="Enter your last name" required>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" title="email" placeholder="Enter your email" required>
+                    <br>
+                    <label for="file">Send us: </label>
+                    <input type="file" name="file"><br>
+                    <textarea rows="5" cols="40" placeholder="Enter your message" required></textarea>
+                    <br>
+                    <button type="submit">Send</button><br>
+                </form>
+            </section>
+        </aside>
+        <footer>
+            <small>&copy; 2023 Desperados</small>
+            <address>
+                <a href="https://www.termsandconditionsgenerator.com/live.php?token=4zvmiDli4ttU1RrpWgaPAxLipjFh4LhC">Terms and Conditions</a>
+            </address>
+            <address>
+                <a href="https://www.termsfeed.com/live/1bb6f34a-eb03-4a64-9825-1df0604a324a">Privacy Policy</a>
+            </address>
+        </footer>
+    </body>
+</html>
